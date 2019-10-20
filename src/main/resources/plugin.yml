@@ -1,0 +1,13 @@
+name: ChallengeBroadcaster
+version: 1.0
+author: fyv
+website: https://dev.bukkit.org/projects/challengebroadcaster
+
+main: pl.fyv.mc.challengebroadcaster.ChallengeBroadcaster
+api-version: 1.14
+
+commands:
+
+  challengebroadcaster:
+    description: credits
+    usage: "/challengebroadcaster"
