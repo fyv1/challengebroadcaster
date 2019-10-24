@@ -11,3 +11,7 @@ commands:
   challengebroadcaster:
     description: credits
     usage: "/challengebroadcaster"
+
+  cbtest:
+    description: cbtest
+    usage: "/cbtest"

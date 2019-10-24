@@ -17,8 +17,9 @@ public class ChallengeBroadcaster extends JavaPlugin implements Listener {
 
     @Override
     public  void onDisable() {
-        getLogger().info(NAME+  ": onDisable is called");
+        getLogger().info(NAME +  ": onDisable is called");
     }
+
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
@@ -27,8 +28,19 @@ public class ChallengeBroadcaster extends JavaPlugin implements Listener {
             return true;
         }
 
+        // will be deprecated
+        if(cmd.getName().equalsIgnoreCase("cbtest")) {
+            try {
+                JSONRetriever j = new JSONRetriever(sender);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return true;
+        }
+
         return false;
     }
+
 
 
 }
